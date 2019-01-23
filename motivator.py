@@ -6,11 +6,9 @@ from threading import Thread
 import sys
 import os
 
-
 def resource_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
-
 
 class App:
     def __init__(self, window, window_title):
@@ -58,7 +56,6 @@ class App:
         self.button_two.forget()
         self.status.configure(text="Good job! Reward yourself!")
         self.button_one.configure(text="I have another thing to do", command=self.do_the_thing)
-
 
 if __name__ == '__main__':
     root = tkinter.Tk()
