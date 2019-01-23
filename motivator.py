@@ -28,7 +28,6 @@ class App:
             item.pack()
 
         self.do_the_thing()
-        self.root.mainloop()
 
     def play_sound(self, victory):
         if victory:
